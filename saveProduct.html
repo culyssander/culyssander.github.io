@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dell - Inserção de produto</title>
+    <!--font awesome-->
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+    crossorigin="anonymous" rel="stylesheet" />
+    <!-- custom css-->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+        crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- nav bar -->
+    <nav class="navbar">
+        <div class="navbar-center">
+            <span class="nav-icon">
+                <i class="fas fa-bars"></i>
+            </span>
+            <a href="index.html" ><img src="./img/Dell_logo_2016.svg.png" width="50" alt="store logo"></a>
+            <div class="cart-btn">
+                <div class="">
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end of nav bar-->
+    
+    <div class="container">
+        <h2>List of products</h2>
+        <button class="btn btn-primary newProduct">New product</button><br><br>
+        <table class="table table-bordered table-condensed table-hover table-striped">
+            <thead>
+                <th>#</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Status</th>
+                <th></th>
+                <th></th>
+            </thead>
+            <tbody id="table-products"></tbody>
+        </table>
+    </div>
+    <div class="see-image">
+    </div>
+
+    <div class="user-overlay">
+        <div class="form-user">
+            <span class="close-form-user">
+                <i class="fas fa-window-close"></i>
+            </span>
+            <span class="message "></span>
+            <h2>User</h2>
+            <form method="post" class="container">
+    
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Type name" required>
+    
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Type email" required>
+    
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" class="form-control" required><br>
+
+                <input type="hidden" name="id", id="id">
+                <input type="submit" value="Save" class=" btn btn-primary btn-save-user" >
+    
+            </form>
+        </div>
+    </div>
+
+    <div class="cart-overlay" id="product">
+        <div class="form">
+            <span class="close-form">
+                <i class="fas fa-window-close"></i>
+            </span>
+            <span class="message-product"></span>
+            <h2>Product</h2>
+            <div class="container">
+    
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title" class="form-control" placeholder="Type title" required>
+    
+                <label for="description">Description</label>
+                <textarea name="description" id="description" class="form-control" placeholder="Type description" required></textarea>
+    
+                <label for="price">Price</label>
+                <input type="number" name="price" id="price" class="form-control" placeholder="Type price" required>
+    
+                <label for="image">Image</label>
+                <input type="file" name="image" id="image" class="form-control" accept="image/*"  required><br>
+                <input type="hidden" name="id", id="id">
+                <button class=" btn btn-primary btn-save" >Save</button>
+                </div>
+        </div>
+    </div>
+    <script src="save-product.js"></script>
+</body>
+</html>

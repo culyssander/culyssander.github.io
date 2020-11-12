@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dell - Venda de computador</title>
+    <!--font awesome-->
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+    crossorigin="anonymous" rel="stylesheet" />
+    <!-- custom css-->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+        crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- nav bar -->
+    <nav class="navbar">
+        <div class="navbar-center">
+            <span class="nav-icon">
+                <i class="fas fa-bars"></i>
+            </span>
+            <a href="index.html" ><img src="./img/Dell_logo_2016.svg.png" width="50" alt="store logo"></a>
+            <div class="cart-btn">
+                <span class="nav-icon">
+                    <i class="fas fa-cart-plus"></i>
+                </span>
+                <div class="cart-items">0</div>
+            </div>
+        </div>
+    </nav>
+    <header class="hero">
+        <div class="banner">
+            <h1 class="banner-title">Temos os melhores laptops do mercado</h1>
+            <button class="banner-btn">Compre agora</button>
+        </div>
+    </header>
+    <!--Product-->
+    <section class="products">
+        <div class="section-title">
+            <h2>Nossos produtos</h2>
+        </div>
+        <div class="products-center">
+            <!-- single product
+            <article class="product">
+                <div class="img-container">
+                    <img src="./img/produto-1.jpg" alt="product" class="product-img"/>
+                    <button class="bag-btn" data-id="1">
+                        <i class="fas fa-shopping-cart"></i>
+                        adicionar no carinho
+                    </button>
+                </div>
+                <h3>Dell laptop</h3>
+                <h4>$156</h4>
+            </article>-->
+            <!-- end of single product-->
+        </div>
+    </section>
+    <!--end of product-->
+    <!--cart-->
+        <div class="cart-overlay">
+            <div class="cart">
+                <span class="close-cart">
+                    <i class="fas fa-window-close"></i>
+                </span>
+                <h2>Seu carinho</h2>
+                <div class="cart-content">
+                    <!--cart item-->
+                    <!-- <div class="cart-items">
+                        <img src="./images/product-1.jpeg" alt="product">
+                        <div>
+                            <h4>queen bed</h4>
+                            <h5>$9.00</h5>
+                            <span class="remove-item">remove</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-chevron-up"></i>
+                            <p class="item-amount">1</p>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div> -->
+                    <!-- end of cart item-->
+                </div>
+                <div class="cart-footer">
+                    <h3>Total da compra : $ <span class="cart-total">0</span>
+                    </h3>
+                    <button class="clear-cart banner-btn">Limpar</button>
+                </div>
+            </div>
+        </div>
+    <!--end of cart-->
+
+    <div class="user-overlay">
+        <div class="form-user">
+            <span class="close-form-user">
+                <i class="fas fa-window-close"></i>
+            </span>
+            <span class="message-login"></span>
+            <h2>Login</h2>
+            <div class="container">
+    
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
+    
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" class="form-control" placeholder="Password" required><br><br>
+
+                <input type="submit" value="Login" class="banner-btn btn-save-login" ><br>
+                <a href="saveProduct.html" target="_blank">Tela de inserçao de producto</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="rodape">
+        <hr>
+        <p>Copyright &copy; 2020 Criado por <a href="https://www.youtube.com/channel/UC78YD8LyQmlVQZWFF-CSlfw?view_as=subscriber" target="blank">Quitumba Ferreira</a>. Todos os direitos reservados.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
