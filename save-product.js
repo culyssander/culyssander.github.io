@@ -14,7 +14,7 @@ const userOverlay = document.querySelector('.user-overlay');
 const userForm = document.querySelector('.form-user');
 const closeFormUser = document.querySelector('.close-form-user');
 const tableProducts = document.querySelector('#table-products');
-const url = 'http://localhost:3000/produtos';
+const url = 'https://api-culysoft-ecommerce.herokuapp.com/produtos';
 
 class Product {
     
